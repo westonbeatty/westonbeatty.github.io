@@ -1,5 +1,46 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    Hi, I'm Weston.
-  </body>
+<head>
+    <title>Full-Screen Background Image with Centered Text</title>
+    <style>
+        /* CSS styles */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif; /* Optional: sets the font */
+        }
+
+        .bg-image {
+            /* The image used */
+            background-image: url('/images/legofortnite.png');
+            
+            /* Full height */
+            height: 100%; 
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            /* Adding flexbox to center content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .centered-text {
+            color: white;
+            font-size: 48px; /* Large font size */
+            font-weight: bold; /* Bold font weight */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-image">
+        <div class="centered-text">Weston Beatty</div>
+    </div>
+
+</body>
 </html>
